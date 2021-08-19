@@ -8,9 +8,6 @@ pipeline {
     }
 
     stages {
-        stage('Env'){
-        env.PATH = env.PATH + ";c:\\Windows\\System32"
-        }
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository
